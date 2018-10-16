@@ -47,7 +47,7 @@ public class RecipeServiceImplTest {
 //        Set<Recipe> expResult = null;
         Set<Recipe> result = recipeService.getRecipes();
         assertEquals(1, result.size());
-        Mockito.verify(recipeRepository, Mockito.times(0)).findAll();
+        Mockito.verify(recipeRepository, Mockito.times(1)).findAll();
     }
     
 }
